@@ -101,8 +101,8 @@ INSERT INTO SousCategorie VALUES(null,2,'Backpack');
 INSERT INTO SousCategorie VALUES(null,2,'Daypack');
 INSERT INTO SousCategorie VALUES(null,2,'Handbag');
 INSERT INTO SousCategorie VALUES(null,3,'Pants');
-INSERT INTO SousCategorie VALUES(null,3,'Shirt'); /*    Chemise */
-INSERT INTO SousCategorie VALUES(null,3,'Sweater');/*   Pull */
+INSERT INTO SousCategorie VALUES(null,3,'Shirt');
+INSERT INTO SousCategorie VALUES(null,3,'Sweater');
 INSERT INTO SousCategorie VALUES(null,3,'T-Shirt');
 INSERT INTO SousCategorie VALUES(null,4,'Necklace');
 INSERT INTO SousCategorie VALUES(null,4,'Bracelet');
