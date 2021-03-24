@@ -35,7 +35,7 @@ CREATE TABLE Produit(
     PrixUnitaire INTEGER,
     DateIntro DATE,
     DescriProduit TEXT,
-    ImageProduit VARCHAR(10)
+    ImageProduit VARCHAR(10),
     FOREIGN KEY(IdCategorie) REFERENCES Categorie(IdCategorie),
     FOREIGN KEY(IdSousCategorie) REFERENCES SousCategorie(IdSousCategorie)
 );
@@ -106,8 +106,8 @@ INSERT INTO SousCategorie VALUES(null,3,'Sweater');/*   Pull */
 INSERT INTO SousCategorie VALUES(null,3,'T-Shirt');
 INSERT INTO SousCategorie VALUES(null,4,'Necklace');
 INSERT INTO SousCategorie VALUES(null,4,'Bracelet');
-INSERT INTO SousCategorie VALUES(null,4,'Ring');/* Bague */
-INSERT INTO SousCategorie VALUES(null,4,'Earring');/* boucle d'oreille */
+INSERT INTO SousCategorie VALUES(null,4,'Ring');
+INSERT INTO SousCategorie VALUES(null,4,'Earring');
 INSERT INTO SousCategorie VALUES(null,5,'Selfie stick');
 INSERT INTO SousCategorie VALUES(null,5,'Keyboard&Mouse');
 INSERT INTO SousCategorie VALUES(null,5,'Charger Pc');
@@ -306,5 +306,3 @@ INSERT INTO Stock VALUES(49,16);
 INSERT INTO Stock VALUES(50,12);
 INSERT INTO Stock VALUES(51,10);
 INSERT INTO Stock VALUES(52,16);
-
-/*  IdVente IdClient IdProduit Quantite DateVente   */
