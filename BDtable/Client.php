@@ -1,10 +1,9 @@
 <?php
-class Client() Extends BDtable
-{
+class Client Extends BDtable{
     public $IdCLient;
     public $LoginClient;
-    public $MdpClient;
     public $UsernameClient;
+    public $MdpClient;
 
     public function getIdCLient()
     {
@@ -14,7 +13,6 @@ class Client() Extends BDtable
     {
         $this->IdCLient=$IdCLient;
     }
-
     public function getLoginClient()
     {
         return $this->LoginClient;
@@ -23,16 +21,6 @@ class Client() Extends BDtable
     {
         $this->LoginClient=$LoginClient;
     }
-
-    public function getMdpClient()
-    {
-        return $this->MdpClient;
-    }
-    public function setMdpClient($MdpClient)
-    {
-        $this->MdpClient=$MdpClient;
-    }
-
     public function getUsernameClient()
     {
         return $this->UsernameClient;
@@ -40,6 +28,14 @@ class Client() Extends BDtable
     public function setUsernameClient($UsernameClient)
     {
         $this->UsernameClient=$UsernameClient;
+    }
+    public function getMdpClient()
+    {
+        return $this->MdpClient;
+    }
+    public function setMdpClient($MdpClient)
+    {
+        $this->MdpClient=$MdpClient;
     }
 }
 ?>

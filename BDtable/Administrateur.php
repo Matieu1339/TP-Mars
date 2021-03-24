@@ -1,41 +1,33 @@
 <?php
-class Administrateur extends BDtable
-{
+class Administrateur extends BDtable{
     public $IdAdministrateur;
-    public $MdpAdmin;
     public $UsernameAdmin;
+    public $MdpAdmin;
 
     public function getIdAdministrateur()
     {
         return $this->IdAdministrateur;
     }
-
+    public function setIdAdministrateur($IdAdministrateur)
+    {
+        $this->IdAdministrateur = $IdAdministrateur;
+    }
     public function getMdpAdmin()
     {
         return $this->MdpAdmin;
     }
-
+    public function setMdpAdmin($MdpAdmin)
+    {
+        $this->mdpAdmin = $MdpAdmin;
+    }
     public function getUsernameAdmin()
     {
         return $this->UsernameAdmin;
     }
-
-    public function setIdAdministrateur($idadm)
+    public function setUsernameAdmin($UsernameAdmin)
     {
-        $this->IdAdministrateur = $idadm;
+        $this->UsernameAdmin = $UsernameAdmin;
     }
-
-
-    public function setMdpAdmin($logadm)
-    {
-        $this->mdpAdmin = $logadm;
-    }
-
-    public function setUsernameAdmin($logadm)
-    {
-        $this->UsernameAdmin = $logadm;
-    }
-
 }
 
 ?>
