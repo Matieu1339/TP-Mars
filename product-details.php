@@ -95,7 +95,6 @@
                                             <li><a href="shop.php">shop</a></li>
                                             <li><a href="product-details.php">product details</a></li>
                                             <li><a href="cart.php">cart</a></li>
-                                            <li><a href="checkout.php">checkout</a></li>
                                             <li><a href="login-register.php">login & register</a></li>
                                         </ul>
                                     </li>
@@ -118,7 +117,6 @@
                                                 <li><a href="shop.php">shop</a></li>
                                                 <li><a href="product-details.php">product details</a></li>
                                                 <li><a href="cart.php">cart</a></li>
-                                                <li><a href="checkout.php">checkout</a></li>
                                                 <li><a href="login-register.php">login & register</a></li>
                                             </ul>
                                         </li>
@@ -249,7 +247,6 @@
                     </ul>
                     <ul class="shopping__btn">
                         <li><a href="cart.php">View Cart</a></li>
-                        <li class="shp__checkout"><a href="checkout.php">Checkout</a></li>
                     </ul>
                 </div>
             </div>
