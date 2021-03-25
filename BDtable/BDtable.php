@@ -41,8 +41,8 @@ class BDtable
     public function MakaAttributs($ReflectCla)
     {
         /**
-        fonction Reflect maka attribut rehetra
-        maka attributs
+        * fonction Reflect maka attribut rehetra
+        * maka attributs
         **/
         return $ReflectCla->getproperties();
     }
@@ -94,6 +94,7 @@ class BDtable
         $indiceMethode=0;
         for($i=0;$i<count($methodName);$i++)
         {
+            // var_dump($method);
             $method[$indiceMethode]= $ReflectCla->getMethod($methodName[$i]) ;
             $indiceMethode++;
         }
@@ -119,25 +120,24 @@ class BDtable
         $ReflectCla=$this->MakaReflectionClass();
     	$nomTable = $this->MakaNomTable($ReflectCla);
         /**
-        maka attributs
+        * maka attributs
         **/
     	$attributs=$this->MakaAttributs($ReflectCla);
     	$indice=0;
         echo count($attributs);
     	/**
-		nom de chaque methode
+		* nom de chaque methode
     	*/
     	$methodName=$this->MakaMethodesName($attributs);
     	/**
-        les Methodes
+        * les Methodes
         */
         $method=$this->MakaMethodes($methodName);
         $valeur=$this->MakaValeurMethodes($method);
         /**
-        les valeurs dans un string
+        *les valeurs dans un string
         */
         $requete="insert into ".$nomTable." values"."(";
-        var_dump($valeur);
         for($i=0;$i<count($valeur);$i++)
         {
             
@@ -169,7 +169,7 @@ class BDtable
                 }
             }
         }
-        echo $requete;
+        //echo $requete;
         $conex->exec($requete);
     }
 
@@ -180,13 +180,12 @@ class BDtable
         $attributs=$this->MakaAttributs($ReflectCla);
         $methodName=$this->MakaMethodesName($attributs);
         /**
-        les Methodes
+        * les Methodes
         */
         $method=$this->MakaMethodes($methodName);
         $valeur=$this->MakaValeurMethodes($method);
         $nomAtr=$this->MakaNameAttributs($attributs);
         $set="";
-        var_dump($valeur);
         for($i=1;$i<count($attributs);$i++)
         {
             if(is_double($valeur[$i])==true || is_float($valeur[$i])==true || is_integer($valeur[$i])==true || is_long($valeur[$i])==true)
@@ -195,12 +194,12 @@ class BDtable
                 {
 
                     $set = $set.$nomAtr[$i]." = ".$valeur[$i].",";
-                    var_dump($valeur[$i]);
+                    //var_dump($valeur[$i]);
                 }
                 else
                 {
                     $set = $set.$nomAtr[$i]." = ".$valeur[$i]." ";
-                    var_dump($valeur[$i]);
+                   // var_dump($valeur[$i]);
                 }
             }
             else
@@ -209,19 +208,19 @@ class BDtable
                 {
 
                     $set = $set.$nomAtr[$i]." = "."'$valeur[$i]'".",";
-                    var_dump($valeur[$i]);
+                    //var_dump($valeur[$i]);
                 }
                 else
                 {
                     $set = $set.$nomAtr[$i]." = "."'$valeur[$i]'"." ";
-                    var_dump($valeur[$i]);
+                    //var_dump($valeur[$i]);
                 }
             }
             
         }
         $where=" where ".$nomAtr[0]." = ".$valeur[0];
         $requete="UPDATE ".$nomTable." Set ".$set.$where;
-        var_dump($requete);
+        //var_dump($requete);
         $conex->exec($requete);
     }
 
@@ -232,13 +231,13 @@ class BDtable
         $attributs=$this->MakaAttributs($ReflectCla);
         $methodName=$this->MakaMethodesName($attributs);
         /**
-        les Methodes
+        * les Methodes
         */
         $method=$this->MakaMethodes($methodName);
         $valeur=$this->MakaValeurMethodes($method);
         $nomAtr=$this->MakaNameAttributs($attributs);
         $set="";
-        var_dump($valeur);
+        //var_dump($valeur);
         for($i=0;$i<count($attributs);$i++)
         {
             if(is_double($valeur[$i])==true || is_float($valeur[$i])==true || is_integer($valeur[$i])==true || is_long($valeur[$i])==true)
@@ -247,12 +246,12 @@ class BDtable
                 {
 
                     $set = $set.$nomAtr[$i]." = ".$valeur[$i]." AND ";
-                    var_dump($valeur[$i]);
+                    //var_dump($valeur[$i]);
                 }
                 else
                 {
                     $set = $set.$nomAtr[$i]." = ".$valeur[$i]." ";
-                    var_dump($valeur[$i]);
+                   // var_dump($valeur[$i]);
                 }
             }
             else
@@ -261,18 +260,18 @@ class BDtable
                 {
 
                     $set = $set.$nomAtr[$i]." = "."'$valeur[$i]'"." AND ";
-                    var_dump($valeur[$i]);
+                    //var_dump($valeur[$i]);
                 }
                 else
                 {
                     $set = $set.$nomAtr[$i]." = "."'$valeur[$i]'"." ";
-                    var_dump($valeur[$i]);
+                    //var_dump($valeur[$i]);
                 }
             }
             
         }
         $requete="DELETE from ".$nomTable." where ".$set;
-        var_dump($requete);
+        //var_dump($requete);
         $conex->exec($requete);
     }
 
@@ -283,20 +282,24 @@ class BDtable
         $attributs=$this->MakaAttributs($ReflectCla);
         $methodName=$this->MakaMethodesName($attributs);
         /**
-        les Methodes
+         * les Methodes
         */
         $method=$this->MakaMethodes($methodName);
         $valeur=$this->MakaValeurMethodes($method);
         $nomAtr=$this->MakaNameAttributs($attributs);
 
         /**
-            recherche de tout les attributs non null
+           * recherche de tout les attributs non null
         */
         $atrNonNull=array();
         $nomAtrNonNull=array();
         $indiceAttributNonNull=0;
-        for($i=1;$i<count($attributs);$i++)
+        for($i=0;$i<count($attributs);$i++)
         {
+            // echo 'nombre attributs';
+            //var_dump(count($attributs));
+            //var_dump($valeur[$i]);
+
             if($valeur[$i]!=null)
             {
                 $atrNonNull[$indiceAttributNonNull]=$valeur[$i];
@@ -304,62 +307,71 @@ class BDtable
                 $indiceAttributNonNull++;
             }
         }
+        // echo 'ito le attributs non null';
+        //var_dump($atrNonNull);
         /**
-            initialisation de la requete
+        *  initialisation de la requete
         */
-        echo 'nom des attributs ';
-        var_dump($nomAtr);
-        echo 'nom des attributs non null';
-        var_dump($nomAtrNonNull);
-        $requete="select * from ".$nomTable." where ";
-        $where="";
-        for($i=0;$i<count($atrNonNull);$i++)
+        
+        $requete="";
+        if(count($atrNonNull)==0)
         {
-            if(is_double($atrNonNull[$i])==true || is_float($atrNonNull[$i])==true || is_integer($atrNonNull[$i])==true || is_long($atrNonNull[$i])==true)
-            {
-                if($i!=count($atrNonNull)-1)
-                {
-                    $where = $where.$nomAtrNonNull[$i]." = ".$atrNonNull[$i]." AND ";
-                    var_dump($where);
-                }
-                else
-                {
-                    $where = $where.$nomAtrNonNull[$i]." = ".$atrNonNull[$i]." ";
-                    var_dump($where);
-                }
-            }
-            else
-            {
-                if($i!=count($atrNonNull)-1)
-                {
-                    $where = $where.$nomAtrNonNull[$i]." = "."'$atrNonNull[$i]'"." AND ";
-                    var_dump($where);
-                }
-                else
-                {
-                    $where = $where.$nomAtrNonNull[$i]." = "."'$atrNonNull[$i]'"." ";
-                    var_dump($where);   
-                }
-            }
+            $requete="select * from ".$nomTable;
         }
-        $requete = $requete.$where;
+        else
+        {
+            $requete="select * from ".$nomTable." where ";
+            $where="";
+            for($i=0;$i<count($atrNonNull);$i++)
+            {
+                if(is_double($atrNonNull[$i])==true || is_float($atrNonNull[$i])==true || is_integer($atrNonNull[$i])==true || is_long($atrNonNull[$i])==true)
+                {
+                    if($i!=count($atrNonNull)-1)
+                    {
+                        $where = $where.$nomAtrNonNull[$i]." = ".$atrNonNull[$i]." AND ";
+                        //var_dump($where);
+                    }
+                    else
+                    {
+                        $where = $where.$nomAtrNonNull[$i]." = ".$atrNonNull[$i]." ";
+                        //var_dump($where);
+                    }
+                }
+                else
+                {
+                    if($i!=count($atrNonNull)-1)
+                    {
+                        $where = $where.$nomAtrNonNull[$i]." = "."'$atrNonNull[$i]'"." AND ";
+                        // var_dump($where);
+                    }
+                    else
+                    {
+                        $where = $where.$nomAtrNonNull[$i]." = "."'$atrNonNull[$i]'"." ";
+                        // var_dump($where);   
+                    }
+                }
+            }
+            $requete = $requete.$where;
+        }
+        
         $stmt = $conex->query($requete);
         $stmt->setFetchMode(PDO::FETCH_NUM);
         $compteur=0;
-        var_dump($stmt);
+        // echo 'statement ';
+        // var_dump($stmt);
         while (($ito = $stmt->fetch())) {
-            echo 'ito le ito';
-            var_dump($ito);
+            // echo 'ito le ito';
+            // var_dump($ito);
             $compteur++;
-            echo 'compteur:';
-            var_dump($compteur);
+            // echo 'compteur:';
+            // var_dump($compteur);
         }
         /**
-        les setters de la classe
+        * les setters de la classe
         */
         
         /**
-        creation du retour de class BDtable et celui de l objet apellant
+        * creation du retour de class BDtable et celui de l objet apellant
         */
         $reponse = array();
         $indiceRep=0;
@@ -367,35 +379,34 @@ class BDtable
         {
             $reponse[$i]=clone $this;
         }
-        var_dump($reponse);
+        // var_dump($reponse);
         $settersName=$reponse[0]->MakaSettersName($attributs);
         $Methodsetters=$reponse[0]->MakaMethodes($settersName);
         $indiceSetters=0;
-        echo 'ito method setters';
-        var_dump($Methodsetters);
+        // echo 'ito method setters';
+        // var_dump($Methodsetters);
         /**
 
         */
         $stmt = $conex->query($requete);
         $stmt->setFetchMode(PDO::FETCH_NUM);
+        // var_dump($Methodsetters);
         while (($it = $stmt->fetch())) 
         {
-            echo 'ato 2';
-            var_dump($it[1]);
-            echo 'valeur 2';
-            var_dump($Methodsetters[$indiceSetters]);
-            for($i=0;$i<=$compteur;$i++)
+            for($i=0;$i<$compteur;$i++)
             {
+                // echo 'Methode setters';
+                // var_dump($Methodsetters[$indiceSetters]);
                 $Methodsetters[$indiceSetters]->invoke($reponse[$indiceRep],$it[$i]);
-                var_dump($Methodsetters[$indiceSetters]);
+                // var_dump($Methodsetters[$indiceSetters]);
                 $indiceSetters++;
             }
             $indiceSetters=0;
             $indiceRep++;
         }
-        echo 'valeur reponse ';
-        var_dump($reponse);
-        var_dump($requete);
+        // echo 'valeur reponse ';
+        // var_dump($reponse); 
+        // var_dump($requete);
         return $reponse;
     } 
 

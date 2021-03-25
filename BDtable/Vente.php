@@ -5,6 +5,7 @@ class Vente extends BDtable{
     public $IdProduit;
     public $Quantite;
     public $DateVente;
+    public $Valider;
 
     public function getIdVente(){
         return $this->IdVente;
@@ -35,6 +36,12 @@ class Vente extends BDtable{
     }
     public function setDateVente($DateVente){
         $this->DateVente=$DateVente;
+    }
+    public function getValider(){
+        return $this->Valider;
+    }
+    public function setValider($Valider){
+        $this->Valider=$Valider;
     }
 }
 ?>

@@ -18,7 +18,7 @@ class Produit extends BDtable{
     public function getIdCategorie(){
         return $this->IdCategorie;
     }
-    public function set($IdCategorie){
+    public function setIdCategorie($IdCategorie){
         $this->IdCategorie=$IdCategorie;
     }
     public function getIdSousCategorie(){
