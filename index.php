@@ -1,3 +1,15 @@
+
+
+<?php
+    /*$Connex=new Connex();
+    $dsn='mysql:dbname=Commerce;host=localhost;charset=utf8';
+    $utilisateur='root';
+    $mdp='root';
+    $connexion=$Connex->getConnexion($dsn,$utilisateur,$mdp);*/
+
+
+?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
@@ -65,12 +77,6 @@
                                             <li><a href="single-portfolio.php">Single portfolio</a></li>
                                         </ul>
                                     </li>
-                                    <li class="drop"><a href="blog.php">Blog</a>
-                                        <ul class="dropdown">
-                                            <li><a href="blog.php">blog 3 column</a></li>
-                                            <li><a href="blog-details.php">Blog details</a></li>
-                                        </ul>
-                                    </li>
                                     <li class="drop"><a href="shop.php">Shop</a>
                                         <ul class="dropdown mega_dropdown">
                                             <!-- Start Single Mega MEnu -->
@@ -104,17 +110,10 @@
                                     </li>
                                     <li class="drop"><a href="#">pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="#">testimonials <span><i class="zmdi zmdi-chevron-right"></i></span></a>
-                                                <ul class="lavel-dropdown">
-                                                    <li><a href="customer-review.php">customer review</a></li>
-                                                </ul>
-                                            </li>
                                             <li><a href="shop.php">shop</a></li>
                                             <li><a href="product-details.php">product details</a></li>
                                             <li><a href="cart.php">cart</a></li>
-                                            <li><a href="wishlist.php">wishlist</a></li>
                                             <li><a href="checkout.php">checkout</a></li>
-                                            <li><a href="team.php">team</a></li>
                                             <li><a href="login-register.php">login & register</a></li>
                                         </ul>
                                     </li>
@@ -130,21 +129,13 @@
                                                 <li><a href="single-portfolio.php">Single portfolio</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="blog.php">blog</a>
-                                            <ul>
-                                                <li><a href="blog.php">blog 3 column</a></li>
-                                                <li><a href="blog-details.php">Blog details</a></li>
-                                            </ul>
-                                        </li>
                                         <li><a href="#">pages</a>
                                             <ul>
                                                 <li><a href="customer-review.php">customer review</a></li>
                                                 <li><a href="shop.php">shop</a></li>
                                                 <li><a href="product-details.php">product details</a></li>
                                                 <li><a href="cart.php">cart</a></li>
-                                                <li><a href="wishlist.php">wishlist</a></li>
                                                 <li><a href="checkout.php">checkout</a></li>
-                                                <li><a href="team.php">team</a></li>
                                                 <li><a href="login-register.php">login & register</a></li>
                                             </ul>
                                         </li>
@@ -215,24 +206,6 @@
                         <li><a href="#"><img src="images/sidebar-img/7.jpg" alt="sidebar images"></a></li>
                         <li><a href="#"><img src="images/sidebar-img/8.jpg" alt="sidebar images"></a></li>
                     </ul>
-                    <div class="offset__widget">
-                        <div class="offset__single">
-                            <h4 class="offset__title">Language</h4>
-                            <ul>
-                                <li><a href="#"> Engish </a></li>
-                                <li><a href="#"> French </a></li>
-                                <li><a href="#"> German </a></li>
-                            </ul>
-                        </div>
-                        <div class="offset__single">
-                            <h4 class="offset__title">Currencies</h4>
-                            <ul>
-                                <li><a href="#"> USD : Dollar </a></li>
-                                <li><a href="#"> EUR : Euro </a></li>
-                                <li><a href="#"> POU : Pound </a></li>
-                            </ul>
-                        </div>
-                    </div>
                     <div class="offset__sosial__share">
                         <h4 class="offset__title">Follow Us On Social</h4>
                         <ul class="off__soaial__link">
@@ -662,14 +635,13 @@
                                                     <div class="product__inner">
                                                         <div class="pro__thumb">
                                                             <a href="#">
-                                                                <img src="images/product/1.png" alt="product images">
+                                                                <img src="images/Phone Honor.jpg" alt="product images">
                                                             </a>
                                                         </div>
                                                         <div class="product__hover__info">
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -687,14 +659,13 @@
                                                     <div class="product__inner">
                                                         <div class="pro__thumb">
                                                             <a href="#">
-                                                                <img src="images/product/2.png" alt="product images">
+                                                                <img src="images/Iphone Apple.jpg" alt="product images">
                                                             </a>
                                                         </div>
                                                         <div class="product__hover__info">
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -719,7 +690,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -744,7 +714,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -769,7 +738,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -800,7 +768,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -825,7 +792,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -850,7 +816,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -875,7 +840,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -900,7 +864,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -931,7 +894,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -956,7 +918,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -981,7 +942,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1006,7 +966,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1031,7 +990,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1062,7 +1020,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1087,7 +1044,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1112,7 +1068,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1137,7 +1092,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1162,7 +1116,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1267,7 +1220,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1292,7 +1244,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1317,7 +1268,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1342,7 +1292,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1367,7 +1316,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1398,7 +1346,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1423,7 +1370,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1448,7 +1394,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1473,7 +1418,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1498,7 +1442,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1523,7 +1466,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1554,7 +1496,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1579,7 +1520,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1604,7 +1544,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1629,7 +1568,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1654,7 +1592,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1679,7 +1616,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1710,7 +1646,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1735,7 +1670,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1760,7 +1694,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1785,7 +1718,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1810,7 +1742,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1835,7 +1766,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1943,7 +1873,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1968,7 +1897,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1993,7 +1921,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -2024,7 +1951,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -2049,7 +1975,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -2074,7 +1999,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -2105,7 +2029,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -2130,7 +2053,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -2155,7 +2077,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -2186,7 +2107,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -2211,7 +2131,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -2236,7 +2155,6 @@
                                                             <ul class="product__action">
                                                                 <li><a data-toggle="modal" data-target="#productModal" title="Quick View" class="quick-view modal-view detail-link" href="#"><span class="ti-plus"></span></a></li>
                                                                 <li><a title="Add TO Cart" href="cart.php"><span class="ti-shopping-cart"></span></a></li>
-                                                                <li><a title="Wishlist" href="wishlist.php"><span class="ti-heart"></span></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -2261,115 +2179,6 @@
         <!-- End Our Product Area -->
         <!-- Start Blog Area -->
         <section class="htc__blog__area bg__white pb--130">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="section__title section__title--2 text-center">
-                            <h2 class="title__line">Latest News</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod temp incididunt ut labore et dolore magna aliqua. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="blog__wrap clearfix mt--60 xmt-30">
-                        <!-- Start Single Blog -->
-                        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                            <div class="blog foo">
-                                <div class="blog__inner">
-                                    <div class="blog__thumb">
-                                        <a href="blog-details.php">
-                                            <img src="images/blog/blog-img/1.jpg" alt="blog images">
-                                        </a>
-                                        <div class="blog__post__time">
-                                            <div class="post__time--inner">
-                                                <span class="date">14</span>
-                                                <span class="month">sep</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog__hover__info">
-                                        <div class="blog__hover__action">
-                                            <p class="blog__des"><a href="blog-details.php">Lorem ipsum dolor sit consectetu.</a></p>
-                                            <ul class="bl__meta">
-                                                <li>By :<a href="#">Admin</a></li>
-                                                <li>Product</li>
-                                            </ul>
-                                            <div class="blog__btn">
-                                                <a class="read__more__btn" href="blog-details.php">read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Blog -->
-                        <!-- Start Single Blog -->
-                        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-                            <div class="blog foo">
-                                <div class="blog__inner">
-                                    <div class="blog__thumb">
-                                        <a href="blog-details.php">
-                                            <img src="images/blog/blog-img/2.jpg" alt="blog images">
-                                        </a>
-                                        <div class="blog__post__time">
-                                            <div class="post__time--inner">
-                                                <span class="date">14</span>
-                                                <span class="month">sep</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog__hover__info">
-                                        <div class="blog__hover__action">
-                                            <p class="blog__des"><a href="blog-details.php">Lorem ipsum dolor sit consectetu.</a></p>
-                                            <ul class="bl__meta">
-                                                <li>By :<a href="#">Admin</a></li>
-                                                <li>Product</li>
-                                            </ul>
-                                            <div class="blog__btn">
-                                                <a class="read__more__btn" href="blog-details.php">read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Blog -->
-                        <!-- Start Single Blog -->
-                        <div class="col-md-4 col-lg-4 hidden-sm col-xs-12">
-                            <div class="blog foo">
-                                <div class="blog__inner">
-                                    <div class="blog__thumb">
-                                        <a href="blog-details.php">
-                                            <img src="images/blog/blog-img/3.jpg" alt="blog images">
-                                        </a>
-                                        <div class="blog__post__time">
-                                            <div class="post__time--inner">
-                                                <span class="date">14</span>
-                                                <span class="month">sep</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="blog__hover__info">
-                                        <div class="blog__hover__action">
-                                            <p class="blog__des"><a href="blog-details.php">Lorem ipsum dolor sit consectetu.</a></p>
-                                            <ul class="bl__meta">
-                                                <li>By :<a href="#">Admin</a></li>
-                                                <li>Product</li>
-                                            </ul>
-                                            <div class="blog__btn">
-                                                <a class="read__more__btn" href="blog-details.php">read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Single Blog -->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Blog Area -->
         <!-- Start Footer Area -->
         <footer class="htc__foooter__area gray-bg">
             <div class="container">

@@ -59,12 +59,6 @@
                             <nav class="mainmenu__nav hidden-xs hidden-sm">
                                 <ul class="main__menu">
                                     <li class="drop"><a href="index.php">Home</a></li>
-                                    <li class="drop"><a href="blog.php">Blog</a>
-                                        <ul class="dropdown">
-                                            <li><a href="blog.php">blog 3 column</a></li>
-                                            <li><a href="blog-details.php">Blog details</a></li>
-                                        </ul>
-                                    </li>
                                     <li class="drop"><a href="shop.php">Shop</a>
                                         <ul class="dropdown mega_dropdown">
                                             <!-- Start Single Mega MEnu -->
@@ -98,18 +92,10 @@
                                     </li>
                                     <li class="drop"><a href="#">pages</a>
                                         <ul class="dropdown">
-                                            <li><a href="about.php">about</a></li>
-                                            <li><a href="#">testimonials <span><i class="zmdi zmdi-chevron-right"></i></span></a>
-                                                <ul class="lavel-dropdown">
-                                                    <li><a href="customer-review.php">customer review</a></li>
-                                                </ul>
-                                            </li>
                                             <li><a href="shop.php">shop</a></li>
                                             <li><a href="product-details.php">product details</a></li>
                                             <li><a href="cart.php">cart</a></li>
-                                            <li><a href="wishlist.php">wishlist</a></li>
                                             <li><a href="checkout.php">checkout</a></li>
-                                            <li><a href="team.php">team</a></li>
                                             <li><a href="login-register.php">login & register</a></li>
                                         </ul>
                                     </li>
@@ -125,12 +111,6 @@
                                                 <li><a href="single-portfolio.php">Single portfolio</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="blog.php">blog</a>
-                                            <ul>
-                                                <li><a href="blog.php">blog 3 column</a></li>
-                                                <li><a href="blog-details.php">Blog details</a></li>
-                                            </ul>
-                                        </li>
                                         <li><a href="#">pages</a>
                                             <ul>
                                                 <li><a href="about.php">about</a></li>
@@ -138,9 +118,7 @@
                                                 <li><a href="shop.php">shop</a></li>
                                                 <li><a href="product-details.php">product details</a></li>
                                                 <li><a href="cart.php">cart</a></li>
-                                                <li><a href="wishlist.php">wishlist</a></li>
                                                 <li><a href="checkout.php">checkout</a></li>
-                                                <li><a href="team.php">team</a></li>
                                                 <li><a href="login-register.php">login & register</a></li>
                                             </ul>
                                         </li>
@@ -210,24 +188,6 @@
                         <li><a href="#"><img src="images/sidebar-img/7.jpg" alt="sidebar images"></a></li>
                         <li><a href="#"><img src="images/sidebar-img/8.jpg" alt="sidebar images"></a></li>
                     </ul>
-                    <div class="offset__widget">
-                        <div class="offset__single">
-                            <h4 class="offset__title">Language</h4>
-                            <ul>
-                                <li><a href="#"> Engish </a></li>
-                                <li><a href="#"> French </a></li>
-                                <li><a href="#"> German </a></li>
-                            </ul>
-                        </div>
-                        <div class="offset__single">
-                            <h4 class="offset__title">Currencies</h4>
-                            <ul>
-                                <li><a href="#"> USD : Dollar </a></li>
-                                <li><a href="#"> EUR : Euro </a></li>
-                                <li><a href="#"> POU : Pound </a></li>
-                            </ul>
-                        </div>
-                    </div>
                     <div class="offset__sosial__share">
                         <h4 class="offset__title">Follow Us On Social</h4>
                         <ul class="off__soaial__link">

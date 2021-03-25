@@ -35,7 +35,7 @@ CREATE TABLE Produit(
     PrixUnitaire INTEGER,
     DateIntro DATE,
     DescriProduit TEXT,
-    ImageProduit VARCHAR(10),
+    ImageProduit VARCHAR(50),
     FOREIGN KEY(IdCategorie) REFERENCES Categorie(IdCategorie),
     FOREIGN KEY(IdSousCategorie) REFERENCES SousCategorie(IdSousCategorie)
 );
@@ -58,8 +58,9 @@ CREATE TABLE Vente(
     IdVente INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
     IdClient INTEGER,
     IdProduit INTEGER,
-    Quantite INTEGER,
+    Quantite INTEGER,   
     DateVente DATE,
+    Valider VARCHAR(10),
     FOREIGN KEY(IdClient) REFERENCES Client(IdClient),
     FOREIGN KEY(IdProduit) REFERENCES Produit(IdProduit)
 );
